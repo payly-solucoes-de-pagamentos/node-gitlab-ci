@@ -4,7 +4,7 @@ FROM node:10-alpine
 
 # run
 RUN apk update && \
-    apk add --no-cache bash curl python3 && \
+    apk add --no-cache bash curl zip python3 && \
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
     python3 get-pip.py && \
     rm get-pip.py && \
